@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/data-structures-algorithms-python" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/leetcodepractise" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/leetcodePractise" vcs="Git" />
   </component>
 </project>
