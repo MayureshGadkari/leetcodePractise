@@ -1,0 +1,4 @@
+#step1 ----> Creata a skeleton.
+Create a project ---> django-admin startproject {projectname}.
+Run a server ---> python manage.py runserver #not mandatory {port }.
+Create a app ---> python manage.py startapp {appname}.
