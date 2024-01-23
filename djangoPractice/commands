@@ -2,3 +2,6 @@
 Create a project ---> django-admin startproject {projectname}.
 Run a server ---> python manage.py runserver #not mandatory {port }.
 Create a app ---> python manage.py startapp {appname}.
+Change your models (in models.py).
+Run python manage.py makemigrations to create migrations for those changes
+Run python manage.py migrate to apply those changes to the database.
