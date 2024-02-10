@@ -1,4 +1,4 @@
-from schemas import create_user as create_user_schema
+from schemas import create_user as create_user_schema,get_details_request
 from crud import create_user,get_user_details
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
@@ -24,5 +24,5 @@ def create_user_endpoint(user: create_user_schema, db: Session = Depends(get_db)
     #     raise HTTPException(status_code=400, detail="Email already registered")
     return create_user(db=db, user=user)
 @app.get("/get_user")
-def get_user(userId:int,db:Session = Depends(get_db)):
-    return get_user_details(db=db, user_id=userId)
+def get_user(data:get_details_request,db:Session = Depends(get_db)):
+    return get_user_details(data,db=db)
