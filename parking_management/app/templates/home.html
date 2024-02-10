@@ -1,0 +1,16 @@
+<!-- app/templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <h1>Parking Management System</h1>
+    <form action="/search_vehicle/" method="post">
+        <label for="plate_number">Enter Plate Number:</label>
+        <input type="text" id="plate_number" name="plate_number" required>
+        <button type="submit">Search Vehicle</button>
+    </form>
+</body>
+</html>
