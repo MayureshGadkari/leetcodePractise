@@ -12,5 +12,8 @@ def highest_freq(nums,k):
             count[i]+=1
         else:
             count[i]=1
-    return count
+    sorted_list = list(dict(sorted(count.items(), key=lambda x: x[1])))
+    print(sorted_list)
+    print(count)
+    return sorted_list[-k::]
 print(highest_freq(nums,k))
